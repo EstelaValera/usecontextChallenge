@@ -1,3 +1,122 @@
-#root {
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.App.light {
+  background-color: #f7f7f7; 
+  color: #333; 
+}
+
+.App.light h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.App.light button {
+  background-color: #040438; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.App.light button:hover {
+  background-color: #02020b; 
+}
+
+.App.light button:focus {
+  outline: none; 
+}
+
+.App.light .theme-button {
+  font-size: 1.2rem;
+}
+
+.App.dark {
+  background-color: #333;
+  color: white;
+}
+
+.App.dark h1 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.App.dark button {
+  background-color: #8d8d9a; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.App.dark button:hover {
+  background-color: #d6d6df; 
+}
+
+.App.dark button:focus {
+  outline: none; 
+}
+
+.App.dark .theme-button {
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05); 
+}
+
+.theme-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #2196F3; 
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-button:hover {
+  background-color: #0b7dda; 
+  transform: scale(1.05); 
+}
+
+.theme-button:focus {
+  outline: none; 
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
